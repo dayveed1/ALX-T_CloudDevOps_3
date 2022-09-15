@@ -17,7 +17,7 @@
 # extract the tar/zipped file
 - name: 'extract the tar/zipped file'
   unarchive:
-    src: /home/circleci/project/artifact.tar.gz
+    src: files/artifact.tar.gz
     dest: /home/ubuntu/backend-app
     # owner: ubuntu
     # group: ubuntu
