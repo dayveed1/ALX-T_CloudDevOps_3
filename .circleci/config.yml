@@ -296,7 +296,15 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            apk add --update --no-cache tar gzip nodejs npm aws-cli curl ansible
+            # apk add --update --no-cache tar gzip nodejs npm aws-cli curl ansible
+            # your code here
+            sudo apt install -y curl tar gzip
+            sudo apt install -y python3
+            sudo apt install -y python3-pip
+            python3 --version
+            python3 -m pip install --upgrade pip
+            # pip3 install ansible
+            python3 -m pip install ansible --user
       - run:
           name: Deploy backend
           command: |
