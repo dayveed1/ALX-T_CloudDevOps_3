@@ -301,7 +301,7 @@ jobs:
             # your code here
             sudo apt install -y curl tar gzip
             sudo apt install -y python3
-            sudo apt-get install python3-pip
+            # sudo apt install -y python3-pip
             python3 --version
             # python3 -m pip install --upgrade pip
             # pip3 install ansible
