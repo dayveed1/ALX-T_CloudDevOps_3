@@ -285,7 +285,8 @@ jobs:
 
   deploy-backend:
     docker:
-      - image: python:3.10-alpine3.16
+      - image: cimg/node:13.8.0
+      # python:3.10-alpine3.16
     steps:
       - checkout
       - add_ssh_keys:
@@ -318,8 +319,7 @@ jobs:
             cd ..
             # Zip the directory
             tar -C backend -czvf artifact.tar.gz .
-            mkdir -p ~/project/.circleci/ansible/roles/deploy/files/
-            mv artifact.tar.gz .circleci/ansible/roles/deploy/files/artifact.tar.gz
+            ls -a && pwd
             cd .circleci/ansible
             echo "Contents  of the inventory.txt file is -------"
             cat inventory.txt
