@@ -315,7 +315,6 @@ jobs:
             TYPEORM_DATABASE=$TYPEORM_DATABASE
             EOF
             cat backend/.env
-
             cd backend
             npm install
             npm run build
