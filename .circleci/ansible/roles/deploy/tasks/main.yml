@@ -46,8 +46,6 @@
     msg: "{{ backend_app.stdout_lines }}"
 
 
-
-
 # - name: "Creates backend app directory"
 #   file:
 #     path: ~/backend-app
@@ -87,8 +85,6 @@
 #   become: true
 #   shell: |
 #     env PATH=$PATH:/usr/local/bin pm2 startup systemd -u ubuntu --hp /home/ubuntu
-
-
 
 
 
